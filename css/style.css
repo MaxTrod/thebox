@@ -1862,7 +1862,6 @@ textarea.input {
     background-color: #3559c7
   }
   .menu__body::before {
-    display: none;
     content: "";
     position: fixed;
     width: 100%;
@@ -1870,13 +1869,13 @@ textarea.input {
     left: 0;
     top: -100%;
     transition: left .3s;
-    z-index: 3
+    z-index: 3;
+    background-color: #3559c7
   }
   .menu-open .menu__body {
     top: 0
   }
   .menu-open .menu__body::before {
-    display: none;
     top: 0
   }
   .menu__list {
@@ -1891,9 +1890,6 @@ textarea.input {
     row-gap: 1.25rem
   }
   .menu__item {
-    padding: .625rem;
-    background-color: rgba(13,47,148,.5);
-    border-radius: .625rem;
     -webkit-transform: translate(0,-30px);
     transform: translate(0,-30px);
     opacity: 0
@@ -1921,7 +1917,10 @@ textarea.input {
   }
   .menu__link {
     color: #fff;
-    font-size: 1.5625rem
+    font-size: 1.5625rem;
+    padding: .625rem;
+    background-color: rgba(13,47,148,.5);
+    border-radius: .625rem
   }
   .icon-menu {
     display: block;

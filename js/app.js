@@ -4873,8 +4873,6 @@
                     spaceBetween: 20,
                     slidesPerGroup: 1,
                     pagination: {
-                        el: ".body-projects__navigation .navigation-control__pagination",
-                        clickable: true,
                         type: "fraction"
                     }
                 },
@@ -4884,7 +4882,10 @@
                     },
                     slidesPerView: 2,
                     spaceBetween: 32,
-                    slidesPerGroup: 2
+                    slidesPerGroup: 2,
+                    pagination: {
+                        type: "bullets"
+                    }
                 }
             },
             on: {}
