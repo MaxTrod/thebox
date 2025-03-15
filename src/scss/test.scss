@@ -1,0 +1,124 @@
+.navigation-slider {
+	height: toRem(40);
+	display: flex;
+	// .navigation-slider__button
+	&__button {
+		flex: 0 0 50%;
+		transition: background-color 0.3s;
+		@media (any-hover: hover){
+			&:hover{
+				background-color: var(--secondary);
+			}
+		}
+		span {
+			font-size: toRem(18);
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: url('@img/icons/arrow.svg') right no-repeat;
+			}
+		}
+	}
+	// .navigation-slider__button--prev
+	&__button--prev {
+		border-right: toRem(0.5) solid #fff;
+		span {
+			padding-left: toRem(40);
+			&::after {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	// .navigation-slider__button--next
+	&__button--next {
+		border-left: toRem(0.5) solid #fff;
+		span {
+			padding-right: toRem(40);
+		}
+	}
+}
+   
+   
+   
+   
+   // .body-projects__control
+	&__control {
+		height: toRem(64);
+		display: flex;
+		align-items: center;
+	}
+	// .body-projects__arrow
+	&__arrow {
+		background-color: $darkBlue;
+		height: 100%;
+		flex: 0 1 36.875%; /* 295/800 */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.swiper-button-prev {}
+		.swiper-button-next {}
+		span {
+			font-size: toRem(18);
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: url('@img/icons/arrow.svg') right no-repeat;
+			}
+		}
+	}
+	// .body-projects__arrow--prev
+	&__arrow--prev {
+		span {
+			padding-left: toRem(40);
+			&::after {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	// .body-projects__arrow--next
+	&__arrow--next {
+		span {
+			padding-right: toRem(40);
+		}
+	}
+   	&__pagination {
+		padding-left: toRem(33);
+		padding-right: toRem(33);
+		@media (max-width:$mobile){
+			padding-left: toRem(5);
+			padding-right: toRem(5);
+		}
+		   flex: 1 1 auto;
+		   height: 100%;
+		   display: flex;
+		   align-items: center;
+		   justify-content: center;
+		   flex-wrap: wrap;
+		   column-gap: toRem(16);
+         .swiper-pagination-bullet {
+         	cursor: pointer;
+         	transition: background-color 0.3s;
+         	flex: 0 0 toRem(16);
+         	height: toRem(16);
+         	border-radius: 50%;
+         	background-color: #F6F8F7;
+         }
+         .swiper-pagination-bullet-active {
+         	background-color: #2947A9;
+         }
+         @media (max-width:$mobile){
+         	color: #2947A9;
+         	font-weight: 600;
+         	flex-wrap: nowrap;
+         }
+	}

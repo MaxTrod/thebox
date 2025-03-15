@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"theBox"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+		<main class="page">
+			<section data-watch="navigator" data-watch-once class="page__hero hero">
+					<div class="hero__slider-big slider-big swiper">
+						<div class="slider-big__wrapper swiper-wrapper">
+							<div class="slider-big__slide swiper-slide">
+								<div class="slider-big__container">
+									<div  class="slider-big__title">Building things is our mission</div>
+								</div>
+								<img class="slider-big__image" src="@img/bg.jpg" alt="Background">
+							</div>
+							<div class="slider-big__slide swiper-slide">
+								<div class="slider-big__container">
+									<div class="slider-big__title">Mission is our building thing</div>
+								</div>
+								<img class="slider-big__image" src="@img/kyuhnya@2x.jpg" alt="Background">
+							</div>
+							<div class="slider-big__slide swiper-slide">
+								<div class="slider-big__container">
+									<div class="slider-big__title">Mission is mission and whatever</div>
+								</div>
+								<img class="slider-big__image" src="@img/slide-3.jpg" alt="Background">
+							</div>
+						</div>
+					</div>
+					<div class="hero__slider-mini slider-mini swiper">
+						<div class="slider-mini__wrapper swiper-wrapper">
+							<div class="slider-mini__slide swiper-slide">
+								<div class="slider-mini__body">
+									<div class="slider-mini__label">Feature Projects</div>
+									<h3 class="slider-mini__title">The National University of Architecture</h3>
+									<!-- <div class="kek">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, molestiae?</div> -->
+								</div>
+							</div>
+							<div class="slider-mini__slide swiper-slide">
+								<div class="slider-mini__body">
+									<div class="slider-mini__label">Feature Projects</div>
+									<h3 class="slider-mini__title">MIT University</h3>
+								</div>
+							</div>
+							<div class="slider-mini__slide swiper-slide">
+								<div class="slider-mini__body">
+									<div class="slider-mini__label">Feature Projects</div>
+								<h3 class="slider-mini__title">Oxford school</h3>
+								</div>
+							</div>
+						</div>
+						<div class="slider-mini__navigation navigation-control navigation-control--hero">
+							<button type="button" class="navigation-control__button navigation-control__button--prev swiper-button-prev">
+								<span>Back</span>
+							</button>
+							<button type="button" class="navigation-control__button navigation-control__button--next swiper-button-next">
+								<span>Next</span>
+							</button>
+						</div>
+					</div>
+			</section>
+			<div data-watch data-watch-threshold="0.3" class="page__best best">
+					<div class="best__container">
+						<div class="best__items">
+							<div class="best__item">
+								<div class="best__image">
+									<img src="@img/best/headphones.svg" alt="Headphones">
+								</div>
+								<h4 class="best__title">Best Services and best Values</h4>
+								<div class="best__text">
+									<p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+								</div>
+							</div>
+							<div class="best__item">
+								<div class="best__image">
+									<img src="@img/best/headphones.svg" alt="Headphones">
+								</div>
+								<h4 class="best__title">Best Teams</h4>
+								<div class="best__text">
+									<p>Cursus semper tellus volutpat aliquet lacus. </p>
+								</div>
+							</div>
+							<div class="best__item">
+								<div class="best__image">
+									<img src="@img/best/pencil.svg" alt="Pencil">
+								</div>
+								<h4 class="best__title">Best Designs</h4>
+								<div class="best__text">
+									<p>Ultricies at ipsum nunc, tristique nam lectus.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<section data-watch="navigator" data-watch-threshold="0.3" class="page__about about">
+				<div class="about__container">
+					<div class="about__image">
+						<img src="@img/about/man-eyeglass.jpg" alt="Man in eyeglasses">
+					</div>
+					<div data-watch data-watch-threshold="0.3" class="about__content">
+						<h2 class="about__title title title--white">About us</h2>
+						<div class="about__text text">
+							<p>For more than 30 years we have been delivering world-class construction and we’ve built many lasting
+								relationships along the way.</p>
+							<p>We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and
+								reliability when building in the U.S.</p>
+						</div>
+						<a href="#" class="about__button button button--white">More on Our History</a>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-threshold="0.3" class="page__services services">
+				<div class="services__container">
+					<h2 data-watch class="services__title title title--center">Services</h2>
+					<div data-watch class="services__items">
+						<div class="services__item item-service">
+							<img class="item-service__image" src="@img/services/icons/construction.svg" alt="Construction">
+							<div class="item-service__type">Construction</div>
+						</div>
+						<div class="services__item item-service">
+							<img class="item-service__image" src="@img/services/icons/renovation.svg" alt="Renovation">
+							<div class="item-service__type">Renovation</div>
+						</div>
+						<div class="services__item item-service">
+							<img class="item-service__image" src="@img/services/icons/consultation.svg" alt="Consultation">
+							<div class="item-service__type">Consultation</div>
+						</div>
+						<div class="services__item item-service">
+							<img class="item-service__image" src="@img/services/icons/repair-services.svg" alt="Repair Services">
+							<div class="item-service__type">Repair Services</div>
+						</div>
+						<div class="services__item item-service">
+							<img class="item-service__image" src="@img/services/icons/architecture.svg" alt="Architecture">
+							<div class="item-service__type">Architecture</div>
+						</div>
+						<div class="services__item item-service">
+							<img class="item-service__image" src="@img/services/icons/eleectric.svg" alt="Electric">
+							<div class="item-service__type">Electric</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch-threshold="0.3" class="page__experience experience">
+				<div data-watch class="experience__container">
+					<div class="experience__content content-experience">
+						<h2 class="content-experience__title title title--blue">30 Years Experience</h2>
+						<div class="content-experience__text text">
+							<p>Our company has been the leading provided construction services to clients throughout the USA since 1988.</p>
+						</div>
+						<a href="#" class="content-experience__button button button--blue">Contact Us</a>
+					</div>
+					<div class="experience__items">
+						<div class="experience__item item-experience">
+							<div class="item-experience__quantity">84</div>
+							<div class="item-experience__text">Happy Clients</div>
+							<img class="item-experience__image" src="@img/experience/handshake.png" alt="Image">
+						</div>
+						<div class="experience__item item-experience">
+							<div class="item-experience__quantity">123</div>
+							<div class="item-experience__text">Projects Completed</div>
+							<img class="item-experience__image" src="@img/experience/note.png" alt="Image">
+						</div>
+						<div class="experience__item item-experience">
+							<div class="item-experience__quantity">37</div>
+							<div class="item-experience__text">Awards Win</div>
+							<img class="item-experience__image" src="@img/experience/prize.png" alt="Image">
+						</div>
+						<div class="experience__item item-experience item-experience--bottom">
+							<div class="item-experience__quantity">30</div>
+							<div class="item-experience__text">Years in Business</div>
+							<img class="item-experience__image" src="@img/experience/pencil.png" alt="Image">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch data-watch-threshold="0.3" class="page__consultation consultation">
+				<img class="consultation__image ibg" src="@img/consultation/background.jpg" alt="background">
+				<div class="consultation__container">
+					<div class="consultation__info">
+						<h2 class="consultation__title title title--white">Free consultation with exceptional quality</h2>
+						<div class="consultation__call-number">
+							Just one call away: <a href="tel:+8411022703">+84 1102 2703</a>
+						</div>
+					</div>
+					<a href="#" class="consultation__button button button--transparent">Get your consultation</a>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-threshold="0.3" class="page__projects projects">
+				<div class="projects__container">
+					<h2 class="projects__title title">Projects</h2>
+					<div data-watch class="projects__content">
+						<nav class="projects__navigation navigation-projects">
+							<ul class="navigation-projects__list">
+								<li data-project-type="" class="navigation-projects__item _active">
+									<button  type="button" class="navigation-projects__category">All</button>
+								</li>
+								<li data-project-type="Commercial" class="navigation-projects__item">
+									<button type="button" class="navigation-projects__category">Commercial</button>
+								</li>
+								<li data-project-type="Rezidential" class="navigation-projects__item">
+									<button type="button" class="navigation-projects__category">Residential</button>
+								</li>
+								<li data-project-type="Other" class="navigation-projects__item">
+									<button type="button" class="navigation-projects__category">Other</button>
+								</li>
+							</ul>
+							<div class="navigation-projects__active"><span></span></div>
+						</nav>
+						<div class="projects__body body-projects">
+							<div class="body-projects__slider swiper">
+								<div class="body-projects__wrapper swiper-wrapper">
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/01.jpg" alt="Wildstone Infra Hotel">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wildstone Infra Hotel</h3>
+												</a>
+												<address class="slide-items__location">2715 Ash Dr. San Jose, South Dakota</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/03.jpg" alt="Mr. Parkinston’s House">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Mr. Parkinston’s House</h3>
+												</a>
+												<address class="slide-items__location">3517 W. Gray St. Utica, Pennsylvania</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/02.jpg" alt="Wish Stone Building">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wish Stone Building</h3>
+												</a>
+												<address class="slide-items__location">2972 Westheimer Rd. Santa Ana, Illinois </address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/04.jpg" alt="Oregano Height">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Oregano Height</h3>
+												</a>
+												<address class="slide-items__location">2464 Royal Ln. Mesa, New Jersey </address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/01.jpg" alt="Wildstone Infra Hotel">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wildstone Infra Hotel</h3>
+												</a>
+												<address class="slide-items__location">2715 Ash Dr. San Jose, South Dakota</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/03.jpg" alt="Mr. Parkinston’s House">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Mr. Parkinston’s House</h3>
+												</a>
+												<address class="slide-items__location">3517 W. Gray St. Utica, Pennsylvania</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/02.jpg" alt="Wish Stone Building">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wish Stone Building</h3>
+												</a>
+												<address class="slide-items__location">2972 Westheimer Rd. Santa Ana, Illinois </address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/04.jpg" alt="Oregano Height">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Oregano Height</h3>
+												</a>
+												<address class="slide-items__location">2464 Royal Ln. Mesa, New Jersey </address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/01.jpg" alt="Wildstone Infra Hotel">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wildstone Infra Hotel</h3>
+												</a>
+												<address class="slide-items__location">2715 Ash Dr. San Jose, South Dakota</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/03.jpg" alt="Mr. Parkinston’s House">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Mr. Parkinston’s House</h3>
+												</a>
+												<address class="slide-items__location">3517 W. Gray St. Utica, Pennsylvania</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/02.jpg" alt="Wish Stone Building">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wish Stone Building</h3>
+												</a>
+												<address class="slide-items__location">2972 Westheimer Rd. Santa Ana, Illinois </address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/04.jpg" alt="Oregano Height">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Oregano Height</h3>
+												</a>
+												<address class="slide-items__location">2464 Royal Ln. Mesa, New Jersey </address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/01.jpg" alt="Wildstone Infra Hotel">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wildstone Infra Hotel</h3>
+												</a>
+												<address class="slide-items__location">2715 Ash Dr. San Jose, South Dakota</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/03.jpg" alt="Mr. Parkinston’s House">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Mr. Parkinston’s House</h3>
+												</a>
+												<address class="slide-items__location">3517 W. Gray St. Utica, Pennsylvania</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/02.jpg" alt="Wish Stone Building">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wish Stone Building</h3>
+												</a>
+												<address class="slide-items__location">2972 Westheimer Rd. Santa Ana, Illinois </address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/04.jpg" alt="Oregano Height">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Oregano Height</h3>
+												</a>
+												<address class="slide-items__location">2464 Royal Ln. Mesa, New Jersey </address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Commercial" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/01.jpg" alt="Wildstone Infra Hotel">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wildstone Infra Hotel</h3>
+												</a>
+												<address class="slide-items__location">2715 Ash Dr. San Jose, South Dakota</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Rezidential" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/01.jpg" alt="Wildstone Infra Hotel">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wildstone Infra Hotel</h3>
+												</a>
+												<address class="slide-items__location">2715 Ash Dr. San Jose, South Dakota</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Rezidential" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/03.jpg" alt="Mr. Parkinston’s House">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Mr. Parkinston’s House</h3>
+												</a>
+												<address class="slide-items__location">3517 W. Gray St. Utica, Pennsylvania</address>
+											</div>
+										</article>
+									</div>
+									<div data-project-type="Other" class="body-projects__slide swiper-slide slide-items">
+										<article class="slide-items__item">
+											<a href="#" class="slide-items__picture">
+												<img src="@img/projects/01.jpg" alt="Wildstone Infra Hotel">
+											</a>
+											<div class="slide-items__info">
+												<a href="#" class="slide-items__link-title">
+													<h3 class="slide-items__title">Wildstone Infra Hotel</h3>
+												</a>
+												<address class="slide-items__location">2715 Ash Dr. San Jose, South Dakota</address>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+							<div class="body-projects__navigation navigation-control navigation-control--grid">
+								<button class="navigation-control__button navigation-control__button--prev swiper-button-prev">
+									<span>Back</span>
+								</button>
+								<div class="navigation-control__pagination swiper-pagination"></div>
+								<button class="navigation-control__button navigation-control__button--next swiper-button-next">
+									<span>Next</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-threshold="0.3" class="page__subscribe subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__body">
+						<div data-watch class="subscribe__content content-subscribe">
+							<h2 class="content-subscribe__title title title--center">What can us do for you?</h2>
+							<div class="content-subscribe__text text">
+								<p>We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
+							</div>
+						</div>
+						<div class="subscribe__user-info">
+							<form data-watch action="#" class="subscribe__form form-subscribe">
+								<div class="form-subscribe__fields">
+									<div class="form-subscribe__item">
+										<input required autocomplete="off" type="text" name="name" data-error="error" placeholder="Your Name" class="form-subscribe__input input">
+									</div>
+									<div class="form-subscribe__item">
+										<input required autocomplete="off" type="email" name="email" data-error="error" placeholder="Email" class="form-subscribe__input input">
+									</div>
+									<div class="form-subscribe__item">
+										<select required title="Reason for Contacting" data-modif-class="form-subscribe__select" name="Select">
+											<option value="" selected>Reason for Contacting</option>
+											<option value="2">To know about time work</option>
+											<option value="3">To make a buy</option>
+											<option value="4">To make fun</option>
+											<option value="5">Talk about specialists</option>
+											<option value="6">Other</option>
+										</select>
+									</div>
+									<div class="form-subscribe__item">
+										<input autocomplete="off" type="tel" name="tel" data-error="error" placeholder="Phone" class="form-subscribe__input input">
+									</div>
+									<div class="form-subscribe__item">
+										<textarea name="Message" placeholder="Message" class="form-subscribe__input input"></textarea>
+									</div>
+								</div>
+								<button type="submit" class="form-subscribe__button button button--blue">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,66 @@
+// буквы
+
+._watcher-view .section-title {
+   opacity: .3;
+   -webkit-transition: opacity .6s ease .8s;
+   transition: opacity .6s ease .8s;
+}
+.section-title {
+   cursor: default;
+   position: absolute;
+   left: 50%;
+   -webkit-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   transform: translateX(-50%);
+   text-transform: uppercase;
+   width: 100%;
+   max-width: 125rem;
+   margin-inline: auto;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-pack: distribute;
+   justify-content: space-around;
+   -webkit-transition: opacity .4s ease;
+   transition: opacity .4s ease;
+}
+
+._watcher-view .section-title span:nth-child(1) {
+   opacity: 1;
+   -webkit-transform: translateY(0) rotate(0);
+   -ms-transform: translateY(0) rotate(0);
+   transform: translateY(0) rotate(0);
+   -webkit-transition-delay: .2s;
+   transition-delay: .2s;
+}
+._watcher-view .section-title span:nth-child(2) {
+   opacity: 1;
+   -webkit-transform: translateY(0) rotate(0);
+   -ms-transform: translateY(0) rotate(0);
+   transform: translateY(0) rotate(0);
+   -webkit-transition-delay: .25s;
+   transition-delay: .25s;
+}
+._watcher-view .section-title span:nth-child(3) {
+   opacity: 1;
+   -webkit-transform: translateY(0) rotate(0);
+   -ms-transform: translateY(0) rotate(0);
+   transform: translateY(0) rotate(0);
+   -webkit-transition-delay: .3s;
+   transition-delay: .3s;
+}
+._watcher-view .section-title span {
+   -webkit-transition: all .6s ease;
+   transition: all .6s ease;
+}
+.section-title span {
+   display: inline-block;
+   opacity: 0;
+   -webkit-transform: translateY(15px) rotate(4deg);
+   -ms-transform: translateY(15px) rotate(4deg);
+   transform: translateY(15px) rotate(4deg);
+   -webkit-transition: all .4s ease;
+   transition: all .4s ease;
+}
+
+//картинка
