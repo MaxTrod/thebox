@@ -13,6 +13,17 @@ function windowLoad() {
    menuActive();
    inputStar();
 }
+//кнопка home---------------------------------------------
+const homeButton = document.querySelector('.menu__link--home');
+homeButton.addEventListener('click', (e) => {
+   e.preventDefault();
+   window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+   });
+})
+
 //убирание картинки при добавлении элемента (начало)---------------------------------------------
  function addImage() {
     const itemExperience = document.querySelectorAll('.item-experience');
