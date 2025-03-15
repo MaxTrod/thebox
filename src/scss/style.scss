@@ -178,9 +178,6 @@ body {
 	}
 }
 .slider-big {
-	// .slider-big__wrapper
-	&__wrapper {
-	}
 	// .slider-big__slide
 	&__slide {
 		position: relative;
@@ -274,8 +271,6 @@ body {
 		}
 		
 	}
-	// .slider-mini__navigation
-	&__navigation {}
 }
 //анимации--------------------------------------------------------
 	.slider-big__title,
@@ -344,8 +339,6 @@ body {
 			transform: translate(0, 0);
 			@for $i from 1 through 3 {
 				&:nth-child(#{$i}) {
-					// $startDelay: 0.3;
-					// $delay: $i * 0.15 + $startDelay;
 					$delay: $i * 0.2;
 					transition-delay: #{$delay}s;
 				}
@@ -354,8 +347,6 @@ body {
 
 
 	}
-	// .best__image
-	&__image {}
 	// .best__title
 	&__title {
 		font-weight: 700;
@@ -478,9 +469,6 @@ body {
 //========================================================================================================================================================
 .services {
 	background-color: var(--neutral-50);
-	// .services__container
-	&__container {	
-	}
 	// .services__title
 	&__title {
 		&:not(:last-child) {
@@ -510,9 +498,6 @@ body {
 			margin: 0 toRem(-15);
 			row-gap: toRem(0);
 	  }
-	}
-	// .services__item
-	&__item {
 	}
 }
 .item-service {
@@ -650,8 +635,6 @@ body {
 			@include adaptiveValue("margin-bottom", 67, 20);
 		}
 	}
-	// .content-experience__button
-	&__button {}
 }
 .item-experience {
 	border: 1px solid var(--neutral-white);
@@ -832,9 +815,6 @@ body {
 		left: 0;
 		z-index: 1;
 	}
-	// .consultation__title
-	&__title {
-	}
 	// .consultation__call-number
 	&__call-number {
 		@include adaptiveValue("font-size", 24, 20);
@@ -848,15 +828,9 @@ body {
 			}
 		}
 	}
-	// .consultation__button
-	&__button {
-	
-	}
 }
 //========================================================================================================================================================
 .projects {
-	// .projects__container
-	&__container {}
 	// .projects__title
 	&__title {
 		&:not(:last-child) {
@@ -995,8 +969,6 @@ body {
 			margin-bottom: toRem(32);
 		}
 	}
-	// .body-projects__wrapper
-	&__wrapper {}
 	// .body-projects__slide
 	&__slide {
 		height: calc((100% - 32px) / 2) !important;
@@ -1106,8 +1078,6 @@ body {
 //========================================================================================================================================================
 .subscribe {
 	background-color: var(--neutral-50);
-	// .subscribe__container
-	&__container {}
 	// .subscribe__body
 	&__body {
 		text-align: center;
@@ -1123,10 +1093,6 @@ body {
 			margin-bottom: toRem(38);
 		}
 	}
-	// .subscribe__user-info
-	&__user-info {}
-	// .subscribe__form
-	&__form {}
 }
 .content-subscribe {
 	// .content-subscribe__title
@@ -1241,8 +1207,6 @@ body {
 			}
 		}
 	}
-	// .form-subscribe__input
-	&__input {}
 	// .form-subscribe__button
 	&__button {
 		width: toRem(270);

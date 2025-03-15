@@ -164,8 +164,6 @@
           }
        }
     }
-   // .contacts-footer__location
-   &__location {}
    // .contacts-footer__phone
    &__phone {
       .contacts-footer__label {
@@ -200,12 +198,6 @@
           flex-direction: column; 
       }
    }
-   // .form-footer__input
-   &__input {
-      // margin-right: toRem(8);
-   }
-   // .form-footer__button
-   &__button {}
 }
 .social-footer {
    
