@@ -18,6 +18,7 @@ const homeButton = document.querySelector('.menu__link--home');
 homeButton.addEventListener('click', (e) => {
    e.preventDefault();
    document.documentElement.classList.remove('menu-open');
+   document.documentElement.classList.remove('lock');
    window.scrollTo({
       top: 0,
       left: 0,
